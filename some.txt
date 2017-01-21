@@ -10,3 +10,8 @@ searched on: " HTML ", " CSS ", " Javascript ", " Angularjs ", " Bootstrap ", " 
 some text here....
 ou are receiving this e-mail because your profile contained one or more of the following words that the recruiter 
 searched on: " HTML ", " CSS ", " Javascript ", " Angularjs ", " Bootstrap ", " jQuery "
+
+
+some text here....
+ou are receiving this e-mail because your profile contained one or more of the following words that the recruiter 
+searched on: " HTML ", " CSS ", " Javascript ", " Angularjs ", " Bootstrap ", " jQuery "
