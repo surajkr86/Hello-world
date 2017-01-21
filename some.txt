@@ -7,15 +7,22 @@ Mandatory Skills – Angular JS (Minimum 1.5 years+),Javascript, HTML, CSS and O
 ou are receiving this e-mail because your profile contained one or more of the following words that the recruiter 
 searched on: " HTML ", " CSS ", " Javascript ", " Angularjs ", " Bootstrap ", " jQuery "
 
-some text here....
-ou are receiving this e-mail because your profile contained one or more of the following words that the recruiter 
-searched on: " HTML ", " CSS ", " Javascript ", " Angularjs ", " Bootstrap ", " jQuery "
-
 
 some text here....
 ou are receiving this e-mail because your profile contained one or more of the following words that the recruiter 
 searched on: " HTML ", " CSS ", " Javascript ", " Angularjs ", " Bootstrap ", " jQuery "
 
+
 some text here....
 ou are receiving this e-mail because your profile contained one or more of the following words that the recruiter 
 searched on: " HTML ", " CSS ", " Javascript ", " Angularjs ", " Bootstrap ", " jQuery "
+
+some text here....
+ou are receiving this e-mail because your profile contained one or more of the following words that the recruiter 
+searched on: " HTML ", " CSS ", " Javascript ", " Angularjs ", " Bootstrap ", " jQuery "
+
+1.Javascript Programming Tutorial | Client-Side Validation of Forms
+001 JavaScript DOM course intro  
+1.Javascript Programming Tutorial | Client-Side Validation of Forms
+001 JavaScript DOM course intro  
+
