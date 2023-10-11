@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Data List</title>
+</head>
+<body>
+    <h1>API Data List</h1>
+
+    <button id="fetchData">Fetch Data</button>
+    <ul id="dataList"></ul>
+
+    <script>
+        // Function to fetch and display data from the API
+        function fetchData() {
+            fetch('https://api.example.com/data') // Replace with your API endpoint
+                .then(response => response.json())
+                .then(data => {
+                    const dataList = document.getElementById('dataList');
+                    dataList.innerHTML = ''; // Clear existing list
+
+                    data.forEach(item => {
+                        const listItem = document.createElement('li');
+                        listItem.textContent = item.name;
+                        
+                        const deleteButton = document.createElement('button');
+                        deleteButton.textContent = 'Delete';
+                        deleteButton.addEventListener('click', () => deleteData(item.id));
+                        
+                        listItem.appendChild(deleteButton);
+                        dataList.appendChild(listItem);
+                    });
+
+                    // Store the data in localStorage
+                    localStorage.setItem('apiData', JSON.stringify(data));
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        }
+
+        // Function to delete data by ID
+        function deleteData(id) {
+            const data = JSON.parse(localStorage.getItem('apiData'));
+            const updatedData = data.filter(item => item.id !== id);
+            
+            // Update the list on the page
+            const dataList = document.getElementById('dataList');
+            dataList.innerHTML = '';
+            updatedData.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.textContent = item.name;
+                
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.addEventListener('click', () => deleteData(item.id));
+                
+                listItem.appendChild(deleteButton);
+                dataList.appendChild(listItem);
+            });
+
+            // Update the localStorage
+            localStorage.setItem('apiData', JSON.stringify(updatedData));
+        }
+
+        // Check if there is data in localStorage and display it
+        const storedData = JSON.parse(localStorage.getItem('apiData'));
+        if (storedData) {
+            const dataList = document.getElementById('dataList');
+            storedData.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.textContent = item.name;
+                
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.addEventListener('click', () => deleteData(item.id));
+                
+                listItem.appendChild(deleteButton);
+                dataList.appendChild(listItem);
+            });
+        }
+
+        // Attach the fetchData function to the button
+        document.getElementById('fetchData').addEventListener('click', fetchData);
+    </script>
+</body>
+</html>
